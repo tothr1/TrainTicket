@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TrainTicket.Model;
+using TrainTicket.Controller;
+using System.Diagnostics;
 
 namespace TrainTicket
 {
@@ -23,6 +26,8 @@ namespace TrainTicket
         public MainWindow()
         {
             InitializeComponent();
+            Debug.WriteLine(TrainController.trains.Count());
+
         }
     }
 }
